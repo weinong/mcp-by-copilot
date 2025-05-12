@@ -12,6 +12,7 @@ This document specifies MCP resource and the python sdk to use.
 
 * MCP server specification is defined in https://modelcontextprotocol.io/introduction
 * The Python SDK is available at https://github.com/modelcontextprotocol/python-sdk
+* Use [Examples](https://github.com/modelcontextprotocol/python-sdk?tab=readme-ov-file#examples) to understand how to use the Python SDK
 
 ## 3. Rationale & Context
 

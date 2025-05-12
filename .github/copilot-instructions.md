@@ -42,7 +42,7 @@ A breadcrumb is a collaborative scratch pad that allow the user and agent to get
    - **Implementation Details**: Code snippets with explanations for key files.
    - **Changes Made**: Summary of files modified and how they changed.
    - **Before/After Comparison**: Highlighting the improvements.
-   - **References**: List of referred material like domain knowledge files, specification files, URLs and summary of what is was used for.
+   - **References**: List of referred material like domain knowledge files, specification files, URLs and summary of what is was used for. If there is a version in the domain knowledge or in the specifications, record the version in the breadcrumb.
 
 4. Workflow rules:
    - Update the breadcrumb **BEFORE** making any code changes.
