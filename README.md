@@ -1,5 +1,7 @@
 # Disney Jokes MCP Server
 
+> Inspired by https://github.com/dasiths/VibeCodingBreadcrumbDemo
+
 A simple Model Context Protocol (MCP) server that returns jokes related to Disney animation movies.
 
 ## Overview
