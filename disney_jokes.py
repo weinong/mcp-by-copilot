@@ -6,19 +6,14 @@ A simple Model Context Protocol server that returns jokes related to Disney anim
 import random
 from typing import Optional, Dict, List, Any
 import sys
-from mcp.server.fastmcp import FastMCP, InitializationOptions
+from mcp.server.fastmcp import FastMCP
 
 # Create MCP server with enhanced configuration
 mcp = FastMCP(
     name="Disney-Jokes-Generator",
     description="An MCP server that provides jokes about Disney animation movies and characters",
     version="1.0.0",
-    dependencies=["mcp>=1.8.0"],
-    initialization_options=InitializationOptions(
-        server_name="Disney-Jokes-Generator",
-        server_version="1.0.0",
-        context={"app_type": "joke_provider", "category": "entertainment"}
-    )
+    dependencies=["mcp>=1.8.0"]
 )
 
 # Disney jokes database
@@ -87,8 +82,7 @@ GENERAL_DISNEY_JOKES = [
 ]
 
 @mcp.tool(
-    description="Get a joke related to Disney animation movies and characters",
-    experimental=False
+    description="Get a joke related to Disney animation movies and characters"
 )
 def get_disney_joke(character: Optional[str] = None, movie: Optional[str] = None) -> str:
     """Get a joke related to Disney animation movies.
@@ -129,8 +123,7 @@ def get_disney_joke(character: Optional[str] = None, movie: Optional[str] = None
     return random.choice(GENERAL_DISNEY_JOKES)
 
 @mcp.tool(
-    description="Get a list of all available Disney joke categories",
-    experimental=False
+    description="Get a list of all available Disney joke categories"
 )
 def list_available_joke_categories() -> Dict[str, List[str]]:
     """Get a list of available Disney joke categories.
