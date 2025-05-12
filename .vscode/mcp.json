@@ -1,0 +1,13 @@
+{
+    "servers": {
+        "disney-joke-generator": {
+            "type": "stdio",
+            "command": "bash.exe",
+            "args": [
+                "--login",
+                "-c",
+                "cd /home/weinongw/repos/mcp-simple && uv run disney_jokes.py"
+            ]
+        }
+    }
+}
